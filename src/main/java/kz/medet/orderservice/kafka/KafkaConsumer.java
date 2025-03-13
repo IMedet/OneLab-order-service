@@ -18,6 +18,6 @@ public class KafkaConsumer {
     @KafkaListener(topics = "Orders", groupId = "my_consumer")
     public void listen(String message){
         System.out.println("Received message = " + message);
-        orderService.addOrderToCustomer(Long.parseLong(message));
+        //orderService.addOrderToCustomer(Long.parseLong(message));
     }
 }
