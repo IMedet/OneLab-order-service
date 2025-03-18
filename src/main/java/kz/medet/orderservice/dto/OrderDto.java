@@ -9,6 +9,7 @@ import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @AllArgsConstructor
@@ -18,7 +19,7 @@ import java.util.List;
 public class OrderDto {
     private Long id;
 
-    private Timestamp timeCreated;
+    private LocalDateTime timeCreated;
 
     private List<Product> products;
 
